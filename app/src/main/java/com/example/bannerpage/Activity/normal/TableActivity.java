@@ -1,10 +1,13 @@
-package com.example.bannerpage;
+package com.example.bannerpage.Activity.normal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
-import com.example.bannerpage.tablelayout.MyTableView;
+import com.example.bannerpage.Interface.OnTableUnitClick;
+import com.example.bannerpage.R;
+import com.example.bannerpage.Activity.tablelayout.MyTableView;
 
 public class TableActivity extends AppCompatActivity {
 
@@ -17,9 +20,15 @@ public class TableActivity extends AppCompatActivity {
         setContentView(R.layout.activity_table);
 
         myTableView1 = findViewById(R.id.table_view);
-        myTableView1.setTable(5,5);
+        myTableView1.setTable(30, 10, new OnTableUnitClick() {
+            @Override
+            public void onTableUnitClickListener(int row, int col,String value) {
+                Toast.makeText(TableActivity.this,"row:"+row+"col:"+col+" "+value,Toast.LENGTH_SHORT).show();
+            }
+        });
         myTableView1.setTableHead(headTitles);
         myTableView1.setTableContent();
+
 
 
     }

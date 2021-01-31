@@ -1,8 +1,10 @@
-package com.example.bannerpage;
+package com.example.bannerpage.Activity.normal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.bannerpage.R;
 
 public class FormActivity extends AppCompatActivity {
 

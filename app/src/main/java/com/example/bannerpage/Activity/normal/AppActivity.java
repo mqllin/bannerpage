@@ -1,11 +1,10 @@
-package com.example.bannerpage;
+package com.example.bannerpage.Activity.normal;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -14,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.example.bannerpage.R;
 
 public class AppActivity extends AppCompatActivity {
     public final int CAMERARES  = 10;
@@ -24,7 +25,7 @@ public class AppActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app);
         initViewText();
-
+                                                                        
         Camera_image = findViewById(R.id.img_camera);
 
     }

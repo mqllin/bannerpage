@@ -4,9 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 //import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
-import com.bigkoo.convenientbanner.ConvenientBanner;
-import com.bigkoo.convenientbanner.listener.OnItemClickListener;
+
+import com.example.bannerpage.Activity.normal.AppActivity;
+import com.example.bannerpage.Activity.normal.BannerActivity;
+import com.example.bannerpage.Activity.normal.TableActivity;
 import com.google.android.material.textfield.TextInputEditText;
 
 //import android.content.DialogInterface;
@@ -15,14 +16,12 @@ import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.util.Calendar;
@@ -234,12 +233,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openBannerPage (View view){
-        Intent intent = new Intent(MainActivity.this,BannerActivity.class);
+        Intent intent = new Intent(MainActivity.this, BannerActivity.class);
         startActivity(intent);
     }
 
     public void openTablePage (View view){
-        Intent intent = new Intent(MainActivity.this,TableActivity.class);
+        Intent intent = new Intent(MainActivity.this, TableActivity.class);
         startActivity(intent);
     }
 

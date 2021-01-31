@@ -1,4 +1,4 @@
-package com.example.bannerpage.banner;
+package com.example.bannerpage.Activity.banner;
 
 import android.view.View;
 import android.view.ViewGroup;

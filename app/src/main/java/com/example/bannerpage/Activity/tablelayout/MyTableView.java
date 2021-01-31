@@ -1,4 +1,4 @@
-package com.example.bannerpage.tablelayout;
+package com.example.bannerpage.Activity.tablelayout;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -7,7 +7,6 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -16,11 +15,14 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
+import com.example.bannerpage.Interface.OnTableUnitClick;
+import com.example.bannerpage.Listener.MyTableUnitListener;
 import com.example.bannerpage.R;
 
 public class MyTableView extends LinearLayout {
     private int width,height;
     private int rows,columns;
+    private OnTableUnitClick mOnTableUnitClick;
     private Context mContext;
     private TableLayout mTableHead,mTableContent;
     private final int MP = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -45,9 +47,10 @@ public class MyTableView extends LinearLayout {
         this.mContext = context;
     }
 
-    public void setTable(int rows,int columns){
+    public void setTable(int rows,int columns,OnTableUnitClick onTableUnitClick){
         this.rows = rows;
         this.columns = columns;
+        this.mOnTableUnitClick = onTableUnitClick;
 
 
     }
@@ -65,9 +68,9 @@ public class MyTableView extends LinearLayout {
        mTableHead.setStretchAllColumns(true);//设置所有的单元格都可以伸缩
        TableRow rowHead = new TableRow(mContext);
        rowHead.setBackgroundColor(Color.rgb(255,255,255));
-       for(int i=0;i<rows;i++){
+       for(int i=0;i<columns;i++){
            TextView tvHeadUnit = new TextView(mContext);
-           tvHeadUnit.setWidth(width/rows);
+           tvHeadUnit.setWidth(250);
            tvHeadUnit.setHeight(100);
            tvHeadUnit.setTextSize(18);
            tvHeadUnit.setGravity(Gravity.CENTER);
@@ -77,6 +80,8 @@ public class MyTableView extends LinearLayout {
            tvHeadUnit.setBackgroundResource(R.drawable.shapee_head);
            if(i<title.length){
                tvHeadUnit.setText(title[i]);
+               tvHeadUnit.setOnClickListener(new MyTableUnitListener(0,i,title[i],mOnTableUnitClick));
+
            }
            rowHead.addView(tvHeadUnit,i);
        }
@@ -97,9 +102,12 @@ public class MyTableView extends LinearLayout {
             rowContent.setBackgroundColor(Color.rgb(255,255,255));
             for(int col = 0; col < columns; col++){
                 TextView tvContentUnit = new TextView(mContext);
-                tvContentUnit.setWidth(width/columns);
+                tvContentUnit.setWidth(250);
                 tvContentUnit.setHeight(100);
-                tvContentUnit.setText("AAA");
+                String text_value = ""+row+col;
+                tvContentUnit.setText(text_value);
+
+                tvContentUnit.setOnClickListener(new MyTableUnitListener(row,col,text_value,mOnTableUnitClick));
                 tvContentUnit.setGravity(Gravity.CENTER);
                 if(col < columns - 1){
                     tvContentUnit.setBackgroundResource(R.drawable.shapee_left);
