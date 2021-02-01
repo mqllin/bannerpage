@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 //import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.bannerpage.Activity.newsList.NewsActivity;
 import com.example.bannerpage.Activity.normal.AppActivity;
 import com.example.bannerpage.Activity.normal.BannerActivity;
 import com.example.bannerpage.Activity.normal.TableActivity;
@@ -239,6 +240,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openTablePage (View view){
         Intent intent = new Intent(MainActivity.this, TableActivity.class);
+        startActivity(intent);
+    }
+
+    public  void openNewsListPage(View view){
+        Intent intent = new Intent(MainActivity.this, NewsActivity.class);
         startActivity(intent);
     }
 

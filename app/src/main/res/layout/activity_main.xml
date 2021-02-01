@@ -89,6 +89,19 @@
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/button5"></Button>
 
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="16dp"
+        android:onClick="openNewsListPage"
+        android:text="新闻列表页面"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button5"></Button>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

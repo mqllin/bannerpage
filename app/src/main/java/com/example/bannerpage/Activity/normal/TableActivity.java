@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.example.bannerpage.Interface.OnTableUnitClick;
 import com.example.bannerpage.R;
-import com.example.bannerpage.Activity.tablelayout.MyTableView;
+import com.example.bannerpage.Components.tablelayout.MyTableView;
 
 public class TableActivity extends AppCompatActivity {
 

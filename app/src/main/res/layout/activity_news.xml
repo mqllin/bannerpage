@@ -4,11 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.normal.TableActivity">
-
-    <com.example.bannerpage.Components.tablelayout.MyTableView
-        android:id="@+id/table_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    tools:context=".Activity.newsList.NewsActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

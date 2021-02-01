@@ -1,4 +1,4 @@
-package com.example.bannerpage.Activity.tablelayout;
+package com.example.bannerpage.Components.tablelayout;
 
 import android.content.Context;
 import android.graphics.Color;
