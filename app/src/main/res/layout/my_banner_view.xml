@@ -15,7 +15,7 @@
         android:layout_height="160dp">
     </androidx.viewpager.widget.ViewPager>
     <LinearLayout
-        android:id="@+id/index_banner_indicators"
+        android:id="@+id/bannerview_indicators"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
