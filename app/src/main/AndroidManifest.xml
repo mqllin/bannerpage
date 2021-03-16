@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bannerpage">
-        <activity android:name=".Activity.newsList.NewsActivity"></activity>
+        <activity android:name=".Activity.normal.DrawActivity"></activity>
+        <activity android:name=".Activity.newsList.NewsActivity" />
         <activity android:name=".Activity.normal.TableActivity" />
         <activity android:name=".Activity.normal.BannerActivity" />
         <activity android:name=".Activity.normal.FormActivity" />
