@@ -1,13 +1,13 @@
-package com.example.bannerpage.Activity.normal;
+package com.example.gameHelper.Activity.fun.normal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.bannerpage.Interface.OnTableUnitClick;
-import com.example.bannerpage.R;
-import com.example.bannerpage.Components.tablelayout.MyTableView;
+import com.example.gameHelper.Interface.OnTableUnitClick;
+import com.example.gameHelper.R;
+import com.example.gameHelper.Components.tablelayout.MyTableView;
 
 public class TableActivity extends AppCompatActivity {
 

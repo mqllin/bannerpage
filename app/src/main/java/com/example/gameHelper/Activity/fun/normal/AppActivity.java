@@ -1,4 +1,4 @@
-package com.example.bannerpage.Activity.normal;
+package com.example.gameHelper.Activity.fun.normal;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.example.bannerpage.R;
+import com.example.gameHelper.R;
 
 public class AppActivity extends AppCompatActivity {
     public final int CAMERARES  = 10;

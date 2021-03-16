@@ -1,4 +1,4 @@
-package com.example.bannerpage.Activity.normal;
+package com.example.gameHelper.Activity.fun.normal;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.example.bannerpage.R;
-import com.example.bannerpage.Activity.banner.BannerSetAdapter;
+import com.example.gameHelper.R;
+import com.example.gameHelper.Activity.fun.banner.BannerSetAdapter;
 
 public class BannerActivity extends AppCompatActivity {
 

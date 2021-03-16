@@ -4,11 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.fun.normal.TableActivity">
+    tools:context=".Activity.fun.normal.BannerActivity">
 
-    <com.example.gameHelper.Components.tablelayout.MyTableView
-        android:id="@+id/table_view"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.example.gameHelper.Components.MyBannerView.MyBannerView
+            android:id="@+id/banner_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

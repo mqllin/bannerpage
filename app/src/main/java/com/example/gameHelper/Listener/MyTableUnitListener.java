@@ -1,9 +1,8 @@
-package com.example.bannerpage.Listener;
+package com.example.gameHelper.Listener;
 
 import android.view.View;
-import android.view.ViewGroup;
 
-import com.example.bannerpage.Interface.OnTableUnitClick;
+import com.example.gameHelper.Interface.OnTableUnitClick;
 
 public class MyTableUnitListener implements View.OnClickListener {
 

@@ -1,14 +1,15 @@
-package com.example.bannerpage;
+package com.example.gameHelper;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 //import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.bannerpage.Activity.newsList.NewsActivity;
-import com.example.bannerpage.Activity.normal.AppActivity;
-import com.example.bannerpage.Activity.normal.BannerActivity;
-import com.example.bannerpage.Activity.normal.TableActivity;
+import com.example.gameHelper.Activity.fun.newsList.NewsActivity;
+import com.example.gameHelper.Activity.fun.normal.AppActivity;
+import com.example.gameHelper.Activity.fun.normal.BannerActivity;
+import com.example.gameHelper.Activity.fun.normal.FristPageActivity;
+import com.example.gameHelper.Activity.fun.normal.TableActivity;
 import com.google.android.material.textfield.TextInputEditText;
 
 //import android.content.DialogInterface;
@@ -114,14 +115,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.menu_item1:
-                Intent intent = new Intent("com.example.bannerpage.APP_ACTIVITY");
+                Intent intent = new Intent("com.example.gameHelper.APP_ACTIVITY");
                 intent.putExtra("data","隐式intent传递数据😄");
                 startActivity(intent);
                 Toast.makeText(MainActivity.this,"隐式intent😄",Toast.LENGTH_SHORT).show();
 
             break;
             case R.id.menu_item2:
-               Intent intent1 = new Intent("com.example.bannerpage.APP_ACTIVITY");
+               Intent intent1 = new Intent("com.example.gameHelper.APP_ACTIVITY");
                intent1.putExtra("data","返回后需要传回数据");
                startActivityForResult(intent1,1);
         }
@@ -245,6 +246,10 @@ public class MainActivity extends AppCompatActivity {
 
     public  void openNewsListPage(View view){
         Intent intent = new Intent(MainActivity.this, NewsActivity.class);
+        startActivity(intent);
+    }
+    public  void openFristPage(View view){
+        Intent intent = new Intent(MainActivity.this, FristPageActivity.class);
         startActivity(intent);
     }
 

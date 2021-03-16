@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bannerpage">
+    package="com.example.gameHelper">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bannerpage">
-        <activity android:name=".Activity.newsList.NewsActivity"></activity>
-        <activity android:name=".Activity.normal.TableActivity" />
-        <activity android:name=".Activity.normal.BannerActivity" />
-        <activity android:name=".Activity.normal.FormActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.fun.newsList.NewsActivity"></activity>
+        <activity android:name=".Activity.fun.normal.FristPageActivity"></activity>
+        <activity android:name=".Activity.fun.normal.TableActivity" />
+        <activity android:name=".Activity.fun.normal.BannerActivity" />
+        <activity android:name=".Activity.fun.normal.FormActivity" />
+        <activity android:name="com.example.gameHelper.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,14 +24,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.normal.AppActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".Activity.fun.normal.AppActivity"
+            android:parentActivityName="com.example.gameHelper.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.gameHelper.MainActivity" />
 
             <intent-filter>
-                <action android:name="com.example.bannerpage.APP_ACTIVITY" />
+                <action android:name="com.example.gameHelper.APP_ACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

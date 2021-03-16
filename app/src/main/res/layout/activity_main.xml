@@ -102,6 +102,18 @@
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button5"></Button>
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:onClick="openFristPage"
+        android:text="APP引导页"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6"></Button>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

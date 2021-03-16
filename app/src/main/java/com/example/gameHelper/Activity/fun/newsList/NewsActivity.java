@@ -1,4 +1,4 @@
-package com.example.bannerpage.Activity.newsList;
+package com.example.gameHelper.Activity.fun.newsList;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,16 +6,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.bannerpage.Components.MyBannerView.MyBannerView;
-import com.example.bannerpage.R;
-
-import org.w3c.dom.Text;
+import com.example.gameHelper.Components.MyBannerView.MyBannerView;
+import com.example.gameHelper.R;
 
 import java.util.ArrayList;
 import java.util.List;

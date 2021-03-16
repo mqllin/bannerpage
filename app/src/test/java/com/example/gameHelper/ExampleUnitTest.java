@@ -1,4 +1,4 @@
-package com.example.bannerpage;
+package com.example.gameHelper;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.bannerpage.Components.MyBannerView;
+package com.example.gameHelper.Components.MyBannerView;
 
 import android.content.Context;
 import android.os.Handler;
@@ -15,10 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.bannerpage.Activity.banner.BannerSetAdapter;
-import com.example.bannerpage.R;
+import com.example.gameHelper.Activity.fun.banner.BannerSetAdapter;
+import com.example.gameHelper.R;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
