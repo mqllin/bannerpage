@@ -16,6 +16,7 @@
         <activity android:name=".Activity.fun.normal.TableActivity" />
         <activity android:name=".Activity.fun.normal.BannerActivity" />
         <activity android:name=".Activity.fun.normal.FormActivity" />
+        <activity android:name=".Activity.fun.normal.DrawActivity" />
         <activity android:name="com.example.gameHelper.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
