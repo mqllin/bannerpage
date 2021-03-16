@@ -8,19 +8,23 @@
 
     >
     <ImageView
+        android:id="@+id/header_view_avatar"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_launcher_background"
         ></ImageView>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header_view_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-49dp"
         android:text="Hello Android"
+        android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="20dp"
-
-        ></TextView>
+        android:textSize="20dp"></TextView>
 
 </RelativeLayout>

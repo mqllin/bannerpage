@@ -1,10 +1,10 @@
-package com.example.bannerpage.Activity.normal;
+package com.example.gameHelper.Activity.fun.normal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.bannerpage.R;
+import com.example.gameHelper.R;
 
 public class DrawActivity extends AppCompatActivity {
 

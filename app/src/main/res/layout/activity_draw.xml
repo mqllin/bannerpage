@@ -5,12 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.normal.DrawActivity">
+    tools:context=".Activity.fun.normal.DrawActivity">
+
+    <!--    DrawActivity组件的第一个根元素是页面的主内容。即页面上展示的内容-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+<!--        左上角的菜单按钮-->
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -21,14 +24,19 @@
             android:layout_height="match_parent"
             android:textSize="20sp"
             android:gravity="center"
-            android:text="page Content"
+            android:text="主页内容"
             ></TextView>
     </LinearLayout>
-<!--    副页面-->
+
+<!--    DrawActivity组件的第二个根元素是副页面内容（弹出框的内容布局）-->
     <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/navigation_view"
-        app:headerLayout=""
-        app:menu=""
+        app:headerLayout="@layout/navigation_header_view"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        ></com.google.android.material.navigation.NavigationView>
+<!-- 组件第三个根元素表示右侧弹出内容-->
+
 </androidx.drawerlayout.widget.DrawerLayout>
