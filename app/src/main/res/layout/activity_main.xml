@@ -114,6 +114,18 @@
         app:layout_constraintStart_toStartOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/button6"></Button>
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:onClick="openDrawTogglePage"
+        android:text="侧滑菜单"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6"></Button>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

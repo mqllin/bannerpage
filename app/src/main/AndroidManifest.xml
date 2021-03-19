@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Bannerpage">
+        android:theme="@style/Theme.gameHelper">
         <activity android:name=".Activity.fun.newsList.NewsActivity"></activity>
         <activity android:name=".Activity.fun.normal.FristPageActivity"></activity>
         <activity android:name=".Activity.fun.normal.DrawActivity"></activity>
