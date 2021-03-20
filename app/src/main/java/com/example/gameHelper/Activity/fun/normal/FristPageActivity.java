@@ -53,6 +53,7 @@ public class FristPageActivity extends AppCompatActivity {
         swiper  = findViewById(R.id.banner_box);
 
 
+
         swiper.initBanner(viewList);
 
     }

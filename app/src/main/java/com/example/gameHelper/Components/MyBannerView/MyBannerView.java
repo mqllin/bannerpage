@@ -38,6 +38,7 @@ public class MyBannerView  extends LinearLayout {
             viewPager.setCurrentItem(msg.what);
         }
     };
+    public int Height;//设置轮播图高度
 
 
     public MyBannerView(Context context) {
@@ -51,9 +52,8 @@ public class MyBannerView  extends LinearLayout {
 
     }
 
-    public void initBanner( List<View> viewList ){
+    public void initBanner( List<View> viewList,int height ){
         LayoutInflater.from(mContext).inflate(R.layout.my_banner_view,this);
-
         viewPager  = findViewById(R.id.bannerview_wrap);
         viewGroup = findViewById(R.id.bannerview_indicators);
 
