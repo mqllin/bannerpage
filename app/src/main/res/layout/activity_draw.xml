@@ -21,6 +21,7 @@
             android:background="@color/design_default_color_primary"
             android:theme="@style/Widget.AppCompat.ActionBar"></androidx.appcompat.widget.Toolbar>
         <TextView
+            android:id="@+id/draw_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20sp"

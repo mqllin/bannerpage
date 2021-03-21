@@ -42,7 +42,7 @@ public class NewsActivity extends AppCompatActivity {
         viewList.add(img4);
 
         myBannerView1  = findViewById(R.id.banner_box);
-        myBannerView1.initBanner(viewList);
+        myBannerView1.initBanner(viewList,0,true,"right","");
 
         this.initListView();
     }
