@@ -1,4 +1,4 @@
-package com.example.gameHelper.Activity.fun.banner;
+package com.example.gameHelper.Adapter;
 
 import android.view.View;
 import android.view.ViewGroup;

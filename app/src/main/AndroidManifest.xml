@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.gameHelper">
-        <activity android:name=".Activity.fun.newsList.NewsActivity"></activity>
-        <activity android:name=".Activity.fun.normal.FristPageActivity"></activity>
-        <activity android:name=".Activity.fun.normal.DrawActivity"></activity>
-
+        <activity android:name=".Activity.fun.normal.GridViewActivity"></activity>
+        <activity android:name=".Activity.fun.newsList.NewsActivity" />
+        <activity android:name=".Activity.fun.normal.FristPageActivity" />
+        <activity android:name=".Activity.fun.normal.DrawActivity" />
         <activity android:name=".Activity.fun.normal.TableActivity" />
         <activity android:name=".Activity.fun.normal.BannerActivity" />
         <activity android:name=".Activity.fun.normal.FormActivity" />
-        <activity android:name="com.example.gameHelper.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name=".Activity.fun.normal.AppActivity"
-            android:parentActivityName="com.example.gameHelper.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.gameHelper.MainActivity" />

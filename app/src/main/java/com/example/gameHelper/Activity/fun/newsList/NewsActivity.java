@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.gameHelper.Components.MyBannerView.MyBannerView;
 import com.example.gameHelper.R;
+import com.example.gameHelper.Methods.RoundView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,6 @@ import java.util.List;
 public class NewsActivity extends AppCompatActivity {
 //    本页面主要练习常见的新闻资讯列表布局，轮播图+新闻列表
     public MyBannerView myBannerView1;
-
     public LinearLayout newsList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,23 +27,16 @@ public class NewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
 
         List<View> viewList = new ArrayList<>();
-
-        ImageView img1 = new ImageView(this);
-        img1.setBackgroundResource(R.drawable.banner1);
+        ImageView img1 = new RoundView().image(this,R.drawable.banner1);
         viewList.add(img1);
-        ImageView img2 = new ImageView(this);
-        img2.setBackgroundResource(R.drawable.banner2);
+        ImageView img2 = new RoundView().image(this,R.drawable.banner2);
         viewList.add(img2);
-        ImageView img3 = new ImageView(this);
-        img3.setBackgroundResource(R.drawable.banner3);
+        ImageView img3 = new RoundView().image(this,R.drawable.banner3);
         viewList.add(img3);
-        ImageView img4 = new ImageView(this);
-        img4.setBackgroundResource(R.drawable.banner4);
+        ImageView img4 = new RoundView().image(this,R.drawable.banner4);
         viewList.add(img4);
-
         myBannerView1  = findViewById(R.id.banner_box);
-        myBannerView1.initBanner(viewList,0,true,"right","");
-
+        myBannerView1.initBanner(viewList,0,true,"right",true);
         this.initListView();
     }
 

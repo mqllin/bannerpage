@@ -10,6 +10,7 @@ import com.example.gameHelper.Activity.fun.normal.AppActivity;
 import com.example.gameHelper.Activity.fun.normal.BannerActivity;
 import com.example.gameHelper.Activity.fun.normal.DrawActivity;
 import com.example.gameHelper.Activity.fun.normal.FristPageActivity;
+import com.example.gameHelper.Activity.fun.normal.GridViewActivity;
 import com.example.gameHelper.Activity.fun.normal.TableActivity;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -255,6 +256,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public  void openDrawTogglePage(View view){
         Intent intent = new Intent(MainActivity.this, DrawActivity.class);
+        startActivity(intent);
+    }
+    public  void openGridViewPage(View view){
+        Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
         startActivity(intent);
     }
 

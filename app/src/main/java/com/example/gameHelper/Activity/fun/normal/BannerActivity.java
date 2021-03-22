@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.example.gameHelper.R;
-import com.example.gameHelper.Activity.fun.banner.BannerSetAdapter;
+import com.example.gameHelper.Adapter.BannerSetAdapter;
 
 public class BannerActivity extends AppCompatActivity {
 
