@@ -1,4 +1,4 @@
-package com.example.gameHelper.Adapter;
+package com.example.gameHelper.uview.Adapter;
 
 import android.view.View;
 import android.view.ViewGroup;

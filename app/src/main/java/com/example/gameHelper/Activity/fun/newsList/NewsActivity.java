@@ -10,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.gameHelper.Components.MyBannerView.MyBannerView;
+import com.example.gameHelper.uview.Components.MyBannerView.MyBannerView;
 import com.example.gameHelper.R;
-import com.example.gameHelper.Methods.RoundView;
+import com.example.gameHelper.uview.Methods.RoundView;
 
 import java.util.ArrayList;
 import java.util.List;

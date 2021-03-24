@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <com.example.gameHelper.Components.MyBannerView.MyBannerView
+            <com.example.gameHelper.uview.Components.MyBannerView.MyBannerView
                 android:id="@+id/banner_box"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

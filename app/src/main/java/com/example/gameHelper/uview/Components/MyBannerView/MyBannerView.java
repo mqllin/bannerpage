@@ -1,4 +1,4 @@
-package com.example.gameHelper.Components.MyBannerView;
+package com.example.gameHelper.uview.Components.MyBannerView;
 
 import android.content.Context;
 import android.os.Handler;
@@ -17,7 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.gameHelper.Adapter.BannerSetAdapter;
+import com.example.gameHelper.uview.Adapter.BannerSetAdapter;
 import com.example.gameHelper.R;
 
 import java.util.List;
@@ -80,7 +80,6 @@ public class MyBannerView  extends LinearLayout {
                 bannerView.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,(int)height_dp));
                 break;
         }
-
 //        创建圆点
 
         indicatorsView = findViewById(R.id.bannerview_indicators);

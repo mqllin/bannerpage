@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Activity.fun.normal.TableActivity">
 
-    <com.example.gameHelper.Components.tablelayout.MyTableView
+    <com.example.gameHelper.uview.Components.tablelayout.MyTableView
         android:id="@+id/table_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

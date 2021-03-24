@@ -1,8 +1,8 @@
-package com.example.gameHelper.Listener;
+package com.example.gameHelper.uview.Listener;
 
 import android.view.View;
 
-import com.example.gameHelper.Interface.OnTableUnitClick;
+import com.example.gameHelper.uview.Interface.OnTableUnitClick;
 
 public class MyTableUnitListener implements View.OnClickListener {
 

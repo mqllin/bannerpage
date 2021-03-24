@@ -1,4 +1,4 @@
-package com.example.gameHelper.Components.tablelayout;
+package com.example.gameHelper.uview.Components.tablelayout;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.example.gameHelper.Interface.OnTableUnitClick;
-import com.example.gameHelper.Listener.MyTableUnitListener;
+import com.example.gameHelper.uview.Interface.OnTableUnitClick;
+import com.example.gameHelper.uview.Listener.MyTableUnitListener;
 import com.example.gameHelper.R;
 
 public class MyTableView extends LinearLayout {

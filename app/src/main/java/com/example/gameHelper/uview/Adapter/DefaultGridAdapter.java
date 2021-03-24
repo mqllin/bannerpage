@@ -1,16 +1,16 @@
-package com.example.gameHelper.Adapter;
+package com.example.gameHelper.uview.Adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.gameHelper.R;
-import com.example.gameHelper.Struct.GridViewItem;
+import com.example.gameHelper.uview.Struct.GridViewItem;
 
 import java.util.List;
 
@@ -52,8 +52,15 @@ public class DefaultGridAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         GridViewItem item =  list.get(position);
+
         holder.icon.setImageResource(item.getIcon_rid());
         holder.name.setText(item.getName());
+        holder.icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,(String)holder.name.getText(),Toast.LENGTH_SHORT).show();
+            }
+        });
         return convertView;
     }
     class ViewHolder{

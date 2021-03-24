@@ -14,12 +14,12 @@
 
         >
 
-        <com.example.gameHelper.Components.MyBannerView.MyBannerView
+        <com.example.gameHelper.uview.Components.MyBannerView.MyBannerView
             android:id="@+id/banner_box"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
         >
-        </com.example.gameHelper.Components.MyBannerView.MyBannerView>
+        </com.example.gameHelper.uview.Components.MyBannerView.MyBannerView>
 
     </RelativeLayout>
 

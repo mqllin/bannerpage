@@ -1,4 +1,4 @@
-package com.example.gameHelper.Methods;
+package com.example.gameHelper.uview.Methods;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;

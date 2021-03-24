@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.fun.normal.GridViewActivity">
-    <GridView
-        android:id="@+id/demo_grid_view"
-        android:layout_width="match_parent"
+    <com.example.gameHelper.uview.Components.MyGridView.MyGridView
+        android:id="@+id/a_grid_view"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:verticalSpacing="10dp"
-        android:numColumns="5"></GridView>
+        android:layout_marginTop="12dp">
+    </com.example.gameHelper.uview.Components.MyGridView.MyGridView>
 
 
 </LinearLayout>

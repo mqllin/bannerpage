@@ -1,8 +1,9 @@
 package com.example.gameHelper.Activity.fun.normal;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.gameHelper.Struct.GridViewItem;
-import com.example.gameHelper.Adapter.DefaultGridAdapter;
+
+import com.example.gameHelper.uview.Components.MyGridView.MyGridView;
+import com.example.gameHelper.uview.Struct.GridViewItem;
 
 import android.os.Bundle;
 import android.widget.GridView;
@@ -14,13 +15,13 @@ import java.util.List;
 
 public class GridViewActivity extends AppCompatActivity {
     private GridView gridView;
+    private MyGridView myGridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_view);
 
-        gridView = findViewById(R.id.demo_grid_view);
         List<GridViewItem> list = new ArrayList<>();
         GridViewItem item;
         item = new GridViewItem("汉堡",R.drawable.hanbao,"");
@@ -52,11 +53,8 @@ public class GridViewActivity extends AppCompatActivity {
         item = new GridViewItem("曲奇",R.drawable.quqi,"");
         list.add(item);
 
-
-
-        DefaultGridAdapter gridAdapter = new DefaultGridAdapter(this,R.layout.grid_view_item,list);
-
-        gridView.setAdapter(gridAdapter);
+        myGridView = findViewById(R.id.a_grid_view);
+        myGridView.init(list,5,10);
 
 
     }

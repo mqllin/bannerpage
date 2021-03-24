@@ -1,4 +1,4 @@
-package com.example.gameHelper.Struct;
+package com.example.gameHelper.uview.Struct;
 
 /**
  * GridView Item 自定义结构
